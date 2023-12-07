@@ -1,3 +1,56 @@
+body {
+    background-color: #bfc0c0;
+}
+
+h2 {
+    font-family: "Courier New", sans-serif;
+    text-align: center;
+
+
+}
+
+p {
+    font-family: "Courier New", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #2d3142;
+    overflow: hidden;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    font-family: "Courier New", sans-serif;
+}
+
+li {
+    display: inline;
+    float: left;
+
+}
+
+a {
+    display: block;
+    color: white;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+a:link, a:visited {
+    background-color: #2d3142;
+    color: #ffffff;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #4f5d75;
+}
+
 .grid {
     width: 300px;
     height: 300px;
@@ -19,3 +72,4 @@
 .shooter {
     background-color: red;
 }
+
