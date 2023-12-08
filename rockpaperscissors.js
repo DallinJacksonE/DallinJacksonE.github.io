@@ -4,10 +4,20 @@ const resultDisplay = document.getElementById('rps-result')
 const possibleChoices = document.querySelectorAll('button')
 let userChoice
 let computerChoice
+let computerChoiceVal
 let result
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click',
     (e) => {
     userChoice = e.target.id
+    if (userChoice === "ROCK") {
+        userChoice = "🪨"
+    }
+    if (userChoice === "PAPER") {
+        userChoice = "🧻"
+    }
+    if (userChoice === "SCISSORS") {
+        userChoice = "✂"
+    }
     userChoiceDisplay.innerHTML = userChoice
     generateComputerChoice()
     getResult()
@@ -18,13 +28,13 @@ function generateComputerChoice() {
     console.log(randomNumber)
 
     if (randomNumber === 1) {
-        computerChoice = "ROCK"
+        computerChoice = "🪨"
     }
     if (randomNumber === 2) {
-        computerChoice = "PAPER"
+        computerChoice = "🧻"
     }
     if (randomNumber === 3) {
-        computerChoice = "SCISSORS"
+        computerChoice = "✂"
     }
     computerChoiceDisplay.innerHTML = computerChoice
 }
@@ -33,22 +43,22 @@ function getResult() {
     if (computerChoice === userChoice){
         result = "It's a draw!"
     }
-    if (computerChoice === "ROCK" && userChoice === "PAPER"){
+    if (computerChoice === "🪨" && userChoice === "🧻"){
         result = "You win!"
     }
-    if (computerChoice === "ROCK" && userChoice === "SCISSORS"){
+    if (computerChoice === "🪨" && userChoice === "✂"){
         result = "You lose"
     }
-    if (computerChoice === "PAPER" && userChoice === "SCISSORS"){
+    if (computerChoice === "🧻" && userChoice === "✂"){
         result = "You win!"
     }
-    if (computerChoice === "PAPER" && userChoice === "ROCK"){
+    if (computerChoice === "🧻" && userChoice === "🪨"){
         result = "You lose"
     }
-    if (computerChoice === "SCISSORS" && userChoice === "ROCK"){
+    if (computerChoice === "✂" && userChoice === "🪨"){
         result = "You win!"
     }
-    if (computerChoice === "SCISSORS" && userChoice === "PAPER"){
+    if (computerChoice === "✂" && userChoice === "🧻"){
         result = "You lose"
     }
     resultDisplay.innerHTML = result
