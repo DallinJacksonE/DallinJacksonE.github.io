@@ -1,3 +1,12 @@
+
+@font-face {
+    font-family: RethinkSans; src: url("font/RethinkSans-Regular.ttf");
+    font-weight: bold; src: url("font/RethinkSans-Bold.ttf");
+
+
+}
+
+
 html {
     height: 100%;
 }
@@ -11,17 +20,17 @@ body {
 }
 
 h2 {
-    font-family: "Courier New", sans-serif;
+    font-family: RethinkSans, sans-serif;
     text-align: center;
 }
 
 h3 {
-    font-family: "Courier New", sans-serif;
+    font-family: RethinkSans, sans-serif;
     font-weight: bolder;
     font-size: xx-large;
 }
 p {
-    font-family: "Courier New", sans-serif;
+    font-family: RethinkSans, sans-serif;
     padding: 10px;
     font-weight: bold;
     font-size: larger;
@@ -36,7 +45,7 @@ ul {
     width: 100%;
     position: sticky;
     top: 0;
-    font-family: "Courier New", sans-serif;
+    font-family: RethinkSans, sans-serif;
 }
 
 li {
